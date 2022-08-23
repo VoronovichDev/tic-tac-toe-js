@@ -1,3 +1,105 @@
+/*Reset*/
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: 100%;
+   font-weight: normal;
+}
+
+ul {
+   list-style: none;
+}
+
+button,
+input,
+select {
+   margin: 0;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+img,
+video {
+   height: auto;
+   max-width: 100%;
+}
+
+iframe {
+   border: 0;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+td,
+th {
+   padding: 0;
+}
+
+/*-------*/
 html {
    background-color: antiquewhite;
+}
+
+body {
+   display: flex;
+   height: 100vh;
+}
+
+.gameboard {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   align-self: center;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+}
+
+.gameboard > div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   font-size: 2rem;
 }
