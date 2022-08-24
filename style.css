@@ -23,7 +23,11 @@ html {
 
 body {
    display: flex;
+   flex-direction: column;
    height: 100vh;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
 }
 
 .gameboard {
@@ -41,6 +45,13 @@ body {
    justify-content: center;
    align-items: center;
    border: 1px solid black;
+   border-radius: 5px;
    font-size: 2rem;
    cursor: pointer;
+}
+
+.result {
+   font-weight: 700;
+   font-size: 2.5rem;
+   text-align: center;
 }
